@@ -134,7 +134,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main Footer -->
     <footer class="main-footer" class="container-fluid" style="text-align:center; background-color:#800000; color:white;">
       <!-- To the right -->
-      <div class="float-right d-none d-sm-inline">
+      <div>
         <i>siber-family</i>
       </div>
       <!-- Default to the left -->

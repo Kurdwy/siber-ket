@@ -1,5 +1,4 @@
-<?php echo view('templates/h'); ?>
-
+<?php echo view('templates/he'); ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -26,7 +25,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Mohon masukan data dengan benar!</h3>
+                            <h3 class="card-title">Pastikan data telah valid!</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -97,5 +96,4 @@
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-
 <?php echo view('templates/f'); ?>
