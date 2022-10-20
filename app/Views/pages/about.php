@@ -1,14 +1,14 @@
 <?= $this->extend('templates/template'); ?>
-<?= $this->section('content'); ?>
 
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/Assets/AdminLTE-3.2.0/dist/css/style.css">
-</head>
-
+    
+    <?= $this->section('content'); ?>
+    <head>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" type="text/css" href="/Assets/AdminLTE-3.2.0/dist/css/style.css">
+    </head>
+    
 <body>
     <div class="section">
         <div class="container">
