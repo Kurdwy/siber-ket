@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'db_projectweblanjutprak',
+        'database' => 'weblanjutpraktikum',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

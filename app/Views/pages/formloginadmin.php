@@ -54,20 +54,27 @@
 </head>
 
 <body>
+<main class="form-signin">
+<?php if (!empty(session()->getFlashdata('error'))) : ?>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <?php echo session()->getFlashdata('error'); ?>
+            </div>
+        <?php endif; ?>
     <div class="row">
         <div class="col-lg-7">
             <img class="fs-2 fototoko" src="/Assets/AdminLTE-3.2.0/img/Siber-ket-gambar-admin.png" alt="Foto hilang" width="350px">
         </div>
         <div class="col-lg-5">
-            <form class="borderlogin">
+            <form class="borderlogin" method="post" action="<?= base_url(); ?>/formloginadmin/process">
+            <?= csrf_field(); ?>
                 <h3>Login</h3>
                 <div class="col-auto">
                     <label class="label">Username</label>
-                    <input type="text" class="form-control " id="Text">
+                    <input type="text" class="form-control " id="username" name="username" placeholder="Username" required autofocus>
                 </div>
                 <div class="col-auto">
                     <label class="label ">Password</label>
-                    <input type="password" class="form-control" id="Password" aria-describedby="passwordHelpInline">
+                    <input type="password" class="form-control " id="password" name="password" placeholder="Password" required>
                 </div>
                 <div class="col-auto">
                     <span id="passwordHelpInline" class="form-text">
@@ -78,6 +85,7 @@
             </form>
         </div>
     </div>
+</main>
 </body>
 
 </html>
