@@ -6,6 +6,7 @@
     <?= $this->section('content'); ?>
     <head>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<<<<<<< HEAD
         <!-- <link rel="stylesheet" type="text/css" href="/Assets/AdminLTE-3.2.0/dist/css/style.css"> -->
 
         <style>
@@ -122,6 +123,9 @@
 
 }
         </style>
+=======
+        <link rel="stylesheet" type="text/css" href="/Assets/AdminLTE-3.2.0/dist/css/style.css">
+>>>>>>> origin/master
     </head>
     
 <body>
