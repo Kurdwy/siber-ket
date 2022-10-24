@@ -34,8 +34,8 @@
                                         <th scope="col">#</th>
                                         <th scope="col">NIK</th>
                                         <th scope="col">Nama</th>
-                                        <th scope="col">Tempat Lahir</th>
                                         <th scope="col">Tanggal Lahir</th>
+                                        <th scope="col">Nomor Handphone</th>
                                         <th scope="col">Jenis Kelamin</th>
                                         <th scope="col">Alamat</th>
                                         <th scope="col">Created_At</th>
