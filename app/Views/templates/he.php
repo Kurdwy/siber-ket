@@ -115,7 +115,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/tables/simple.html" class="nav-link">
+                                    <a href="/regis" class="nav-link">
                                         <i class="far fa-circle nav-icon" style="color:#ffd204;"></i>
                                         <p style="color:#ffd204;">Akun Baru</p>
                                     </a>
