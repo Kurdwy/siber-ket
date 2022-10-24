@@ -8,7 +8,7 @@
           <div class="col-md-12">
             <!-- general form elements -->
             <div class="card card-danger">
-              <div class="card-header">
+              <div class="card-header" style="background-color: #800000; color: white">
                 <h3 class="card-title">Registrasi Akun karyawan</h3>
               </div>
               <!-- /.card-header -->

@@ -137,7 +137,7 @@
                 </div>
                 <div class="content">
                     <h3>Siber-Ket merupakan sistem yang didesain untuk membantu karyawan dalam mempermudah tugas mereka untuk membuat akun member pelanggan</h3>
-                    <p>Dengan Siber-Ket, karyawan dapat menghemat waktu pelayanan pelanggan dalam membuat akun member</p>
+                    <h3>Dengan Siber-Ket, karyawan dapat menghemat waktu pelayanan pelanggan dalam membuat akun member</h3>
                     <div class="button">
                         <a href="">Read More</a>
                     </div>
