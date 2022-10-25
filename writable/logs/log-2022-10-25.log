@@ -582,3 +582,85 @@ in APPPATH\Views\pages\dashboardkaryawan.php on line 80.
  7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 13:19:49 --> Invalid file: formloginkaryawan.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formloginkaryawan.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('formloginkaryawan', [], true)
+ 3 APPPATH\Controllers\LoginKaryawan.php(11): view('formloginkaryawan')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\LoginKaryawan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginKaryawan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 13:20:32 --> Invalid file: formloginkaryawan.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formloginkaryawan.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('formloginkaryawan', [], true)
+ 3 APPPATH\Controllers\LoginKaryawan.php(11): view('formloginkaryawan')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\LoginKaryawan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginKaryawan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 13:20:47 --> Invalid file: formloginadmin.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formloginadmin.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('formloginadmin', [], true)
+ 3 APPPATH\Controllers\LoginAdmin.php(11): view('formloginadmin')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\LoginAdmin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 13:21:50 --> Invalid file: formloginadmin.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formloginadmin.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('formloginadmin', [], true)
+ 3 APPPATH\Controllers\LoginAdmin.php(11): view('formloginadmin')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\LoginAdmin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 13:21:56 --> Invalid file: formloginkaryawan.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formloginkaryawan.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('formloginkaryawan', [], true)
+ 3 APPPATH\Controllers\LoginKaryawan.php(11): view('formloginkaryawan')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\LoginKaryawan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginKaryawan))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 13:22:04 --> Invalid file: formloginadmin.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formloginadmin.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('formloginadmin', [], true)
+ 3 APPPATH\Controllers\LoginAdmin.php(11): view('formloginadmin')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\LoginAdmin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 13:24:03 --> Invalid file: formloginadmin.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formloginadmin.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('formloginadmin', [], true)
+ 3 APPPATH\Controllers\LoginAdmin.php(11): view('formloginadmin')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\LoginAdmin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 13:28:56 --> Undefined variable $member
+in APPPATH\Views\pages\dashboardkaryawan.php on line 45.
+ 1 APPPATH\Views\pages\dashboardkaryawan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $member', 'APPPATH\\Views\\pages\\dashboardkaryawan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\dashboardkaryawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pages/dashboardkaryawan', [], true)
+ 5 APPPATH\Controllers\Pages.php(26): view('pages/dashboardkaryawan')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->view('dashboardkaryawan')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
