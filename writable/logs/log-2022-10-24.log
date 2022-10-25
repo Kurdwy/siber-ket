@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ERROR - 2022-10-24 23:58:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
 	`nik` VARCHAR NOT NULL,
 	`password` VARCHAR NOT NULL,
@@ -42,3 +43,17 @@ Stack trace:
 #14 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
 #15 C:\xampp\htdocs\siber-ket\spark(98): CodeIgniter\CLI\Console->run()
 #16 {main}
+=======
+CRITICAL - 2022-10-24 20:31:48 --> Undefined variable $suratmasuk
+in APPPATH\Views\pages\dashboardadmin.php on line 51.
+ 1 APPPATH\Views\pages\dashboardadmin.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $suratmasuk', 'APPPATH\\Views\\pages\\dashboardadmin.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\dashboardadmin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pages/dashboardadmin', [], true)
+ 5 APPPATH\Controllers\Pages.php(26): view('pages/dashboardadmin')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->view('dashboardadmin')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+>>>>>>> ec4841a6cfb253acb87e44ade2fefbe82ee9e77e
