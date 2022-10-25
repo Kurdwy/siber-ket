@@ -1,5 +1,3 @@
-<?php echo view('templates/h'); ?>
-
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -29,7 +27,7 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
+                  <th scope="col">No</th>
                   <th scope="col">NIK</th>
                   <th scope="col">Nama Lengkap</th>
                   <th scope="col">Created_At</th>
@@ -75,11 +73,12 @@
 
             <!-- /.card-body -->
           </div>
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li><?= $pager->Links() ?></li>
-            </ul>
-          </nav>
+          <div class="row">
+            <div class="col">
+              <!--Tampilkan pagination-->
+              <?= $pager->links() ?>
+            </div>
+          </div>
           <!-- /.card -->
           <!-- /.col -->
         </div>
@@ -89,4 +88,3 @@
   </section>
   <!-- /.content -->
 </div>
-<?php echo view('templates/f'); ?>
