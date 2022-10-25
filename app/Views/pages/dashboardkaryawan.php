@@ -29,57 +29,51 @@
                             <h3 class="card-title">Mohon masukan data dengan benar!</h3>
                         </div>
                         <!-- /.card-header -->
-                        <div class="card-body">
-                            <table id="example2" class="table table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Rendering engine</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th>Engine version</th>
-                                        <th>CSS grade</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Trident</td>
-                                        <td>Internet
-                                            Explorer 4.0
-                                        </td>
-                                        <td>Win 95+</td>
-                                        <td> 4</td>
-                                        <td>X</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trident</td>
-                                        <td>Internet
-                                            Explorer 5.0
-                                        </td>
-                                        <td>Win 95+</td>
-                                        <td>5</td>
-                                        <td>C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trident</td>
-                                        <td>Internet
-                                            Explorer 5.5
-                                        </td>
-                                        <td>Win 95+</td>
-                                        <td>5.5</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trident</td>
-                                        <td>Internet
-                                            Explorer 6
-                                        </td>
-                                        <td>Win 98+</td>
-                                        <td>6</td>
-                                        <td>A</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">NIK</th>
+      <th scope="col">Nama Lengkap</th>
+      <th scope="col">Created_At</th>
+      <th scope="col">Updated_At</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+
+    $no = 1;
+    
+    foreach ($member as $mbr) :
+        $dataNik = $mbr['nik']
+    ?>
+
+      <tr>
+        <th scope="row"><?= $mbr['nik'] ?></th>
+        <td><?= $mbr['namaLengkap'] ?></td>
+        <td><?= $mbr['created_at'] ?></td>
+        <td><?= $mbr['updated_at'] ?></td>
+        <td>
+          <div class="d-flex">
+            <a class="btn btn-warning mr-3" href="/edit/<?= $mbr['nik'] ?>">Edit</a>
+            <form action="/delete/<?= $mbr['nik'] ?>" method="post">
+              <input name="_method" value="DELETE" type="hidden">
+              <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+          </div>
+        </td>
+      </tr>
+
+    <?php
+
+      $no++;
+    endforeach
+
+    ?>
+
+  </tbody>
+</table>
                         <!-- /.card-body -->
                     </div>
                     <!-- /.card -->
