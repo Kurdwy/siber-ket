@@ -11,11 +11,13 @@ class DashboardKaryawan extends BaseController
     public function index()
     {
         $memberModel = new Member();
+        $data['member'] = $memberModel->paginate(5);
+        $data['pager'] = $memberModel->pager;
 
-        $data = [
-            'member' => $memberModel->findAll()
-        ];
-        
+        // $data = [
+        //     'member' => $memberModel->findAll()
+        // ];
+
         return view('templates/h', $data)
             . view('pages/dashboardkaryawan', $data)
             . view('templates/f', $data);
