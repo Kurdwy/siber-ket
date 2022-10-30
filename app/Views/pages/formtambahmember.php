@@ -1,4 +1,4 @@
-<?php echo view('templates/he'); ?>
+<?php echo view('templates/h'); ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper mt-4">
     <section class="content">

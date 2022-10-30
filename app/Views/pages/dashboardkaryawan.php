@@ -21,7 +21,10 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Mohon Input Data Dengan Benar!</h3>
+              <!-- <h3 class="card-title">Mohon Input Data Dengan Benar!</h3> -->
+              <div>
+                <a href="/formtambahmember" type="submit" class="btn" style="background-color: #800000; color: white">Tambah</a>
+              </div>
             </div>
             <!-- /.card-header -->
             <table class="table table-striped">
@@ -30,6 +33,9 @@
                   <th scope="col">No</th>
                   <th scope="col">NIK</th>
                   <th scope="col">Nama Lengkap</th>
+                  <th scope="col">Tempat Lahir</th>
+                  <th scope="col">Tanggal Lahir</th>
+                  <th scope="col">Jenis Kelamin</th>
                   <th scope="col">Created_At</th>
                   <th scope="col">Updated_At</th>
                   <th scope="col">Action</th>
@@ -48,6 +54,9 @@
                     <th scope="row"><?= $no ?></th>
                     <td><?= $mbr['nik'] ?></td>
                     <td><?= $mbr['namaLengkap'] ?></td>
+                    <td><?= $mbr['tempatLahir'] ?></td>
+                    <td><?= $mbr['tanggalLahir'] ?></td>
+                    <td><?= $mbr['jenisKelamin'] ?></td>
                     <td><?= $mbr['created_at'] ?></td>
                     <td><?= $mbr['updated_at'] ?></td>
                     <td>
@@ -88,3 +97,23 @@
   </section>
   <!-- /.content -->
 </div>
+
+<script>
+  $(function() {
+    $("#example1").DataTable({
+      "responsive": true,
+      "lengthChange": false,
+      "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
