@@ -1,0 +1,14 @@
+CRITICAL - 2022-10-31 05:56:28 --> bootstrap is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap')
+ 2 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('member', 'bootstrap')
+ 3 APPPATH\Views\pages\dashboardkaryawan.php(88): CodeIgniter\Pager\Pager->links('member', 'bootstrap')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\dashboardkaryawan.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pages/dashboardkaryawan', [], true)
+ 7 APPPATH\Controllers\DashboardKaryawan.php(22): view('pages/dashboardkaryawan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\DashboardKaryawan->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardKaryawan))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
