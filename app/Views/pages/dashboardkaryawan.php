@@ -18,10 +18,20 @@
   <section class="content">
     <div class="container-fluid">
       <div class="row">
+        <div class="col">
+          <form action="" method="POST">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Masukan Keyword Pencarian" name="keyword" autocomplete="off">
+              <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <!-- <h3 class="card-title">Mohon Input Data Dengan Benar!</h3> -->
+
               <div>
                 <a href="/formtambahmember" type="submit" class="btn" style="background-color: #800000; color: white">Tambah</a>
               </div>
@@ -36,8 +46,9 @@
                   <th scope="col">Tempat Lahir</th>
                   <th scope="col">Tanggal Lahir</th>
                   <th scope="col">Jenis Kelamin</th>
+                  <th scope="col">Alamat</th>
                   <th scope="col">Created_At</th>
-                  <th scope="col">Updated_At</th>
+
                   <th scope="col">Action</th>
                 </tr>
               </thead>
@@ -58,11 +69,11 @@
                     <td><?= $mbr['tempatLahir'] ?></td>
                     <td><?= $mbr['tanggalLahir'] ?></td>
                     <td><?= $mbr['jenisKelamin'] ?></td>
+                    <td><?= $mbr['alamat'] ?></td>
                     <td><?= $mbr['created_at'] ?></td>
-                    <td><?= $mbr['updated_at'] ?></td>
                     <td>
                       <div class="d-flex">
-                        <a class="btn btn-warning mr-3" href="/edit/<?= $mbr['nik'] ?>">Edit</a>
+                        <a class="btn btn-warning mr-3" href="/edit/<?= $mbr['nik'] ?>"> Edit</a>
                         <form action="/delete/<?= $mbr['nik'] ?>" method="post">
                           <input name="_method" value="DELETE" type="hidden">
                           <button type="submit" class="btn btn-danger">Delete</button>

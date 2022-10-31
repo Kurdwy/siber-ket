@@ -12,10 +12,13 @@ class DashboardKaryawan extends BaseController
     {
 
         $curentPage = $this->request->getVar('page_member') ?  $this->request->getVar('page_member') : 1;
+
         $memberModel = new Member();
         $data['member'] = $memberModel->paginate(4, 'member');
         $data['pager'] = $memberModel->pager;
         $data['currentPage'] = $curentPage;
+
+        $keyword = $this->request->getVar('keyword');
 
         // $data = [
         //     'member' => $memberModel->findAll()
