@@ -18,22 +18,22 @@
   <section class="content">
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
-          <form action="" method="POST">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Masukan Keyword Pencarian" name="keyword" autocomplete="off">
-              <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="row">
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-
-              <div>
-                <a href="/formtambahmember" type="submit" class="btn" style="background-color: #800000; color: white">Tambah</a>
+              <div class="row">
+                <div class="col-4">
+                  <form action="" method="POST">
+                    <div class="input-group">
+                      <input type="text" class="form-control" value="<?= $keyword ?>" placeholder="Masukan Keyword Pencarian" name="keyword" autocomplete="off">
+                      <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-7"></div>
+                <div class="col-1">
+                  <a href="/formtambahmember" type="submit" class="btn" style="background-color: #800000; color: white">Tambah</a>
+                </div>
               </div>
             </div>
             <!-- /.card-header -->
@@ -94,12 +94,16 @@
 
             <!-- /.card-body -->
           </div>
-          <div class="row">
-            <div class="col">
-              <!--Tampilkan pagination-->
-              <?= $pager->links('member', 'bootstrap') ?>
-            </div>
+
+          <div class="float-left">
+            <i>showing <?= 1 + (4 * ($currentPage - 1)) ?> to <?= $no - 1 ?> of <?= $pager->getperPage() ?> entries</i>
           </div>
+
+          <div class="float-right">
+            <!--Tampilkan pagination-->
+            <?= $pager->links('member', 'bootstrap') ?>
+          </div>
+
           <!-- /.card -->
           <!-- /.col -->
         </div>

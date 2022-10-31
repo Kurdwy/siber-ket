@@ -41,6 +41,8 @@ $routes->get('/index', 'Pages::index');
 $routes->post('/formloginkaryawan/process', 'LoginKaryawan::process');
 $routes->get('/logout', 'LoginKaryawan::logout');
 $routes->get('/dashboardkaryawan', 'DashboardKaryawan::index');
+$routes->post('/dashboardkaryawan', 'DashboardKaryawan::index');
+
 
 $routes->post('/formloginadmin/process', 'LoginAdmin::process');
 $routes->get('/logout', 'LoginAdmin::logout');
