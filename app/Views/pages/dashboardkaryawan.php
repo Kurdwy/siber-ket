@@ -95,9 +95,6 @@
             <!-- /.card-body -->
           </div>
 
-          <div class="float-left">
-            <i>showing <?= 1 + (4 * ($currentPage - 1)) ?> to <?= $no - 1 ?> of <?= $pager->getperPage() ?> entries</i>
-          </div>
 
           <div class="float-right">
             <!--Tampilkan pagination-->
