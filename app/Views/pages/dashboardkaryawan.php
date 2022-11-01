@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-7"></div>
                 <div class="col-1">
-                  <a href="/formtambahmember" type="submit" class="btn" style="background-color: #800000; color: white">Tambah</a>
+                  <a href="/formtambahmember" type="button" class="btn" style="background-color: #800000; color: white">Tambah</a>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@
                     <td>
                       <div class="d-flex">
                         <a class="btn btn-warning mr-3" href="/edit/<?= $mbr['nik'] ?>"> Edit</a>
-                        <form action="/delete/<?= $mbr['nik'] ?>" method="post">
+                        <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
                           <input name="_method" value="DELETE" type="hidden">
                           <button type="submit" class="btn btn-danger">Delete</button>
                         </form>

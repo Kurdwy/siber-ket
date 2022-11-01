@@ -38,16 +38,27 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/index', 'Pages::index');
 
+$routes->get('/create', 'DashboardKaryawan::create');
+$routes->post('/store', 'DashboardKaryawan::store');
+$routes->get('/edit/(:num)', 'DashboardKaryawan::edit/$1');
+$routes->post('/update/(:num)', 'DashboardKaryawan::update/$1');
+$routes->delete('/dashboardkaryawan/delete/(:num)', 'DashboardKaryawan::delete/$1');
+
 $routes->post('/formloginkaryawan/process', 'LoginKaryawan::process');
 $routes->get('/logout', 'LoginKaryawan::logout');
 $routes->get('/dashboardkaryawan', 'DashboardKaryawan::index');
 $routes->post('/dashboardkaryawan', 'DashboardKaryawan::index');
 
 
+
+
+
 $routes->post('/formloginadmin/process', 'LoginAdmin::process');
 $routes->get('/logout', 'LoginAdmin::logout');
 
 $routes->get('(:any)', 'Pages::view/$1');
+$routes->post('/formtambahmember', 'TambahMember::create');
+$routes->post('/formtambahmember/store', 'TambahMember::store');
 $routes->get('/formloginkaryawan', 'LoginKaryawan::index');
 $routes->get('/formloginadmin', 'LoginAdmin::index');
 

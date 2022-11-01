@@ -10,7 +10,7 @@ class Member extends Model
     protected $primaryKey       = 'nik';
     //protected $returnType       = "object";
     protected $useTimesStamps   = true;
-    protected $allowedFields    = ['namaLengkap', 'tempatLahir', 'tanggalLahir', 'jenisKelamin', 'nik', 'password'];
+    protected $allowedFields    = ['namaLengkap', 'tempatLahir', 'tanggalLahir', 'jenisKelamin', 'nik', 'password', 'alamat'];
 
     public function search($keyword)
     {
@@ -22,4 +22,9 @@ class Member extends Model
         $builder->orLike('nik', $keyword);
         return $builder;
     }
+
+    public function saveMember($data){
+        $query = $this->db->table($this->table)->insert($data);
+           return $query;
+       }
 }

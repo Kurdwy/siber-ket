@@ -1,0 +1,55 @@
+CRITICAL - 2022-11-01 05:26:02 --> Undefined array key "alamat"
+in APPPATH\Views\pages\dashboardkaryawan.php on line 72.
+ 1 APPPATH\Views\pages\dashboardkaryawan.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "alamat"', 'APPPATH\\Views\\pages\\dashboardkaryawan.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\dashboardkaryawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pages/dashboardkaryawan', [], true)
+ 5 APPPATH\Controllers\DashboardKaryawan.php(40): view('pages/dashboardkaryawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\DashboardKaryawan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardKaryawan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 09:22:29 --> Class "App\Controllers\SuratMasuk" not found
+in APPPATH\Controllers\TambahMember.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\TambahMember->edit('1810010402020004')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TambahMember))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 12:38:11 --> Undefined variable $keyword
+in APPPATH\Views\pages\dashboardkaryawan.php on line 28.
+ 1 APPPATH\Views\pages\dashboardkaryawan.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $keyword', 'APPPATH\\Views\\pages\\dashboardkaryawan.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\dashboardkaryawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/dashboardkaryawan', [], true)
+ 5 APPPATH\Controllers\Pages.php(26): view('pages/dashboardkaryawan')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->view('dashboardkaryawan', 'submit')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 12:38:19 --> Undefined variable $keyword
+in APPPATH\Views\pages\dashboardkaryawan.php on line 28.
+ 1 APPPATH\Views\pages\dashboardkaryawan.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $keyword', 'APPPATH\\Views\\pages\\dashboardkaryawan.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\dashboardkaryawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/dashboardkaryawan', [], true)
+ 5 APPPATH\Controllers\Pages.php(26): view('pages/dashboardkaryawan')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->view('dashboardkaryawan', 'tes')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 12:38:28 --> Undefined variable $keyword
+in APPPATH\Views\pages\dashboardkaryawan.php on line 28.
+ 1 APPPATH\Views\pages\dashboardkaryawan.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $keyword', 'APPPATH\\Views\\pages\\dashboardkaryawan.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\dashboardkaryawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/dashboardkaryawan', [], true)
+ 5 APPPATH\Controllers\Pages.php(26): view('pages/dashboardkaryawan')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->view('dashboardkaryawan', 'admin')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
