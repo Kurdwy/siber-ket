@@ -73,7 +73,7 @@
                     <td><?= $mbr['created_at'] ?></td>
                     <td>
                       <div class="d-flex">
-                        <a class="btn btn-warning mr-3" href="/edit/<?= $mbr['nik'] ?>"> Edit</a>
+                        <a class="btn btn-warning mr-3" href="/formeditmember/<?= $mbr['nik'] ?>"> Edit</a>
                         <form action="/delete/<?= $mbr['nik'] ?>" method="post">
                           <input name="_method" value="DELETE" type="hidden">
                           <button type="submit" class="btn btn-danger">Delete</button>

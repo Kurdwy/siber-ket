@@ -136,7 +136,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="pages/tables/data.html" class="nav-link">
+                                            <a href="/listkaryawan" class="nav-link">
                                                 <i class="far fa-circle nav-icon" style="color:#ffffff;"></i>
                                                 <p style="color:#ffffff;">Lihat Karyawan</p>
                                             </a>
