@@ -13,25 +13,25 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form>
+                        <form action="/dashboardkaryawan" method="post">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="form-group col-6">
-                                        <label for="inputNama">Nama Lengkap</label>
+                                        <label for="namaLengkap">Nama Lengkap</label>
                                         <input type="text" class="form-control" id="namaLengkap" name="namaLengkap" placeholder="Masukkan Nama Lengkap">
                                     </div>
                                     <div class="col-sm-6">
                                         <!-- <div class="form-group"> -->
-                                        <label for="inputTglLahir">Tanggal Lahir</label>
-                                        <input type="date" class="form-control" id="tempatLahir" name="tempatLahir" placeholder="Masukkan Tanggal Lahir">
+                                        <label for="tanggalLahir">Tanggal Lahir</label>
+                                        <input type="date" class="form-control" id="tanggalLahir" name="tanggalLahir" placeholder="Masukkan Tanggal Lahir">
                                     </div>
                                     <div class="form-group col-6">
-                                        <label for="inputNIK">NIK</label>
+                                        <label for="nik">NIK</label>
                                         <input type="text" class="form-control" id="nik" name="nik" placeholder="Masukan Nomor Induk Kependudukan">
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group">
-                                            <label>Jenis Kelamin</label>
+                                            <label for="jenisKelamin">Jenis Kelamin</label>
                                             <select class="form-control" id="jenisKelamin" name="jenisKelamin">
                                                 <option selected>---Pilih Jenis Kelamin---</option>
                                                 <option>Pria</option>
@@ -40,11 +40,11 @@
                                         </div>
                                     </div>
                                     <div class="form-group col-6">
-                                        <label for="inputAlamat">Tempat Lahir</label>
+                                        <label for="tempatLahir">Tempat Lahir</label>
                                         <input type="text" class="form-control" id="tempatLahir" name="tempatLahir" placeholder="">
                                     </div>
                                     <div class="form-group col-6">
-                                        <label for="inputAlamat">Alamat</label>
+                                        <label for="alamat">Alamat</label>
                                         <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamatnya dimana ya?">
                                     </div>
                                     <div>

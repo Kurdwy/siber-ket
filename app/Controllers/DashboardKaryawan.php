@@ -87,43 +87,43 @@ class DashboardKaryawan extends BaseController
         return redirect()->to('/dashboardkaryawan');
     }
 
-    public function edit($id_surat_masuk)
+    public function edit($nik)
     {
-        $suratMasukModel = new SuratMasuk();
-        $suratmasuk = $suratMasukModel->find($id_surat_masuk);
+        $memberModel = new Member();
+        $member = $memberModel->find($nik);
 
         $data = [
-            'title' => 'Edit Surat Masuk'
+            'title' => 'Edit Member'
         ];
 
-        return view('templates/header', $data)
-            . view('suratmasuk/edit', $suratmasuk)
-            . view('templates/footer');
+        return view('templates/h', $data)
+            . view('pages/formeditmember', $member)
+            . view('templates/f');
     }
 
-    public function update($id_surat_masuk)
+    public function update($nik)
     {
         if (!$this->validate([
-            'no_surat' => 'required',
-            'isi_surat' => 'required',
-            'tgl_terima_surat' => 'required',
-            'tgl_surat' => 'required',
-            'asal_surat' => 'required',
-            'keterangan_surat' => 'required',
+            'namaLengkap',
+            'tanggalLahir',
+            'nik',
+            'jenisKelamin',
+            'tempatLahir',
+            'alamat',
         ])) {
-            return redirect()->to('/suratmasuk');
+            return redirect()->to('/dashboardkaryawan');
         }
-        $suratMasukModel = new SuratMasuk();
+        $memberModel = new Member();
         $data = [
-            'no_surat' => $this->request->getVar('no_surat'),
-            'isi_surat' => $this->request->getVar('isi_surat'),
-            'tgl_terima_surat' => $this->request->getVar('tgl_terima_surat'),
-            'tgl_surat' => $this->request->getVar('tgl_surat'),
-            'asal_surat' => $this->request->getVar('asal_surat'),
-            'keterangan_surat' => $this->request->getVar('keterangan_surat'),
+            'namaLengkap' => $this->request->getPost('namaLengkap'),
+            'tanggalLahir' => $this->request->getPost('tanggalLahir'),
+            'nik' => $this->request->getPost('nik'),
+            'jenisKelamin' => $this->request->getPost('jenisKelamin'),
+            'tempatLahir' => $this->request->getPost('tempatLahir'),
+            'alamat' => $this->request->getPost('alamat')
         ];
 
-        $suratMasukModel->update($id_surat_masuk, $data);
-        return redirect()->to('/suratmasuk');
+        $memberModel->update($nik, $data);
+        return redirect()->to('/dashboardkaryawan');
         }
 }
