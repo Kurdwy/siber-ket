@@ -46,7 +46,17 @@
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-                <!-- Navbar Search
+                <div class="user-panel d-flex">
+                    <div class="image">
+                        <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/dist/img/avatar2.png') ?>" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">UJANG SLEBEW</a>
+                    </div>
+                </div>
+            </ul>
+
+            <!-- Navbar Search
                 <li class="nav-item">
                     <a class="nav-link" data-widget="navbar-search" href="#" role="button">
                         <i class="fas fa-search"></i>
@@ -81,14 +91,6 @@
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/dist/img/avatar2.png') ?>" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">UJANG SLEBEW</a>
-                    </div>
-                </div>
 
                 <style>
                     .container-bg {
@@ -99,7 +101,7 @@
                 <!-- Sidebar Menu -->
                 <div class="container-bg">
                     <div class="card-bg">
-                        <nav class="mt-2">
+                        <nav class="mt-4">
                             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
