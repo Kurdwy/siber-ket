@@ -73,8 +73,8 @@
                     <td><?= $mbr['created_at'] ?></td>
                     <td>
                       <div class="d-flex">
-                        <a class="btn btn-warning mr-3" href="/edit/<?= $mbr['nik'] ?>"> Edit</a>
-                        <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
+                        <a class="btn btn-warning mr-3" href="/formeditmember/<?= $mbr['nik'] ?>"> Edit</a>
+                        <form action="/delete/<?= $mbr['nik'] ?>" method="post">
                           <input name="_method" value="DELETE" type="hidden">
                           <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
@@ -95,9 +95,6 @@
             <!-- /.card-body -->
           </div>
 
-          <div class="float-left">
-            <i>showing <?= 1 + (4 * ($currentPage - 1)) ?> to <?= $no - 1 ?> of <?= $pager->getperPage() ?> entries</i>
-          </div>
 
           <div class="float-right">
             <!--Tampilkan pagination-->

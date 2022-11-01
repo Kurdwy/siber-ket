@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-11-01 05:26:02 --> Undefined array key "alamat"
 in APPPATH\Views\pages\dashboardkaryawan.php on line 72.
  1 APPPATH\Views\pages\dashboardkaryawan.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "alamat"', 'APPPATH\\Views\\pages\\dashboardkaryawan.php', 72)
@@ -51,5 +52,65 @@ in APPPATH\Views\pages\dashboardkaryawan.php on line 28.
  6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->view('dashboardkaryawan', 'admin')
  7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
  8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+=======
+CRITICAL - 2022-11-01 13:02:20 --> Undefined variable $keyword
+in APPPATH\Views\pages\listkaryawan.php on line 28.
+ 1 APPPATH\Views\pages\listkaryawan.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $keyword', 'APPPATH\\Views\\pages\\listkaryawan.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\listkaryawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pages/listkaryawan', [], true)
+ 5 APPPATH\Controllers\Pages.php(26): view('pages/listkaryawan')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->view('listkaryawan')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 13:03:30 --> Undefined variable $currentPage
+in APPPATH\Views\pages\listkaryawan.php on line 58.
+ 1 APPPATH\Views\pages\listkaryawan.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'APPPATH\\Views\\pages\\listkaryawan.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\listkaryawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pages/listkaryawan', [], true)
+ 5 APPPATH\Controllers\Pages.php(26): view('pages/listkaryawan')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->view('listkaryawan')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 13:04:08 --> Undefined variable $currentPage
+in APPPATH\Views\pages\listkaryawan.php on line 58.
+ 1 APPPATH\Views\pages\listkaryawan.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'APPPATH\\Views\\pages\\listkaryawan.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\listkaryawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pages/listkaryawan', [], true)
+ 5 APPPATH\Controllers\Pages.php(26): view('pages/listkaryawan')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->view('listkaryawan')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 13:04:43 --> Undefined variable $member
+in APPPATH\Views\pages\listkaryawan.php on line 60.
+ 1 APPPATH\Views\pages\listkaryawan.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $member', 'APPPATH\\Views\\pages\\listkaryawan.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\listkaryawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pages/listkaryawan', [], true)
+ 5 APPPATH\Controllers\Pages.php(26): view('pages/listkaryawan')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->view('listkaryawan')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 13:05:30 --> Undefined variable $no
+in APPPATH\Views\pages\listkaryawan.php on line 58.
+ 1 APPPATH\Views\pages\listkaryawan.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'APPPATH\\Views\\pages\\listkaryawan.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\listkaryawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pages/listkaryawan', [], true)
+ 5 APPPATH\Controllers\Pages.php(26): view('pages/listkaryawan')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pages->view('listkaryawan')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+>>>>>>> 1f749ebb29bacebb489af8c7a63ad423e0d7efa8
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

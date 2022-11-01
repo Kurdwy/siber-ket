@@ -33,7 +33,7 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
-        
+
 
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -46,7 +46,16 @@
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-                <!-- Navbar Search -->
+                <div class="user-panel d-flex">
+                    <div class="image">
+                        <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/dist/img/avatar2.png') ?>" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">FARHAN KEBAB</a>
+                    </div>
+                </div>
+            </ul>
+            <!-- Navbar Search
                 <li class="nav-item">
                     <a class="nav-link" data-widget="navbar-search" href="#" role="button">
                         <i class="fas fa-search"></i>
@@ -66,68 +75,76 @@
                             </div>
                         </form>
                     </div>
-                </li>
+                </li> -->
         </nav>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar elevation-4" style="background-color: #800000;">
+        <aside class="main-sidebar elevation-4" style="background-color: #ffffff;">
             <!-- Brand Logo -->
             <a class="brand-link">
-                <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/img/siber-ket.png') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/img/siber-ket-with-bg.png') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <h4 class="brand-text font-weight-light"><b>Siber-ket</b></h4>
             </a>
 
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/dist/img/avatar2.png') ?>" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">FARHAN KEBAB</a>
-                    </div>
-                </div>
+
+
+                <style>
+                    .container-bg {
+                        background: #800000;
+                        border-radius: 10px;
+                    }
+                </style>
 
                 <!-- Sidebar Menu -->
-                <nav class="mt-2">
+                <nav class="mt-4">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table" style="color:#ffd204;"></i>
-                                <p style="color:#ffd204;">
-                                    Validasi Member
-                                    <!-- <i class="fas fa-angle-left right"></i> -->
-                                </p>
-                            </a>
-                        </li>
+                        <div class="container-bg">
+                            <div class="card-bg">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
+                                        <p style="color:#ffffff;">
+                                            Validasi Member
+                                            <!-- <i class="fas fa-angle-left right"></i> -->
+                                        </p>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
 
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table" style="color:#ffd204;"></i>
-                                <p style="color:#ffd204;">
-                                    Akun Karyawan
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
+                        <div class="container-bg mt-2">
+                            <div class="card-bg">
                                 <li class="nav-item">
-                                    <a href="/regis" class="nav-link">
-                                        <i class="far fa-circle nav-icon" style="color:#ffd204;"></i>
-                                        <p style="color:#ffd204;">Akun Baru</p>
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-table float" style="color:#ffffff;"></i>
+                                        <p style="color:#ffffff;">
+                                            Akun Karyawan
+                                            <i class="fas fa-angle-left right"></i>
+                                        </p>
                                     </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="/regis" class="nav-link">
+                                                <i class="far fa-circle nav-icon" style="color:#ffffff;"></i>
+                                                <p style="color:#ffffff;">Akun Baru</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/listkaryawan" class="nav-link">
+                                                <i class="far fa-circle nav-icon" style="color:#ffffff;"></i>
+                                                <p style="color:#ffffff;">Lihat Karyawan</p>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="pages/tables/data.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon" style="color:#ffd204;"></i>
-                                        <p style="color:#ffd204;">Hapus Akun</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
