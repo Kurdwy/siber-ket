@@ -33,7 +33,7 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
-       
+
 
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -71,10 +71,10 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar elevation-4" style="background-color: #800000;">
+        <aside class="main-sidebar elevation-4" style="background-color: #ffffff;">
             <!-- Brand Logo -->
             <a class="brand-link">
-                <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/img/siber-ket.png') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/img/siber-ket-with-bg.png') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <h4 class="brand-text font-weight-light"><b>Siber-ket</b></h4>
             </a>
 
@@ -90,42 +90,53 @@
                     </div>
                 </div>
 
+                <style>
+                    .container-bg {
+                        background: #800000;
+                        border-radius: 10px;
+                    }
+                </style>
                 <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
+                <div class="container-bg">
+                    <div class="card-bg">
+                        <nav class="mt-2">
+                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                                <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table" style="color:#ffd204;"></i>
-                                <p style="color:#ffd204;">
-                                    Data Member
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/tables/simple.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon" style="color:#ffd204;"></i>
-                                        <p style="color:#ffd204;">Hari ini</p>
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-table float" style="color:#ffffff;"></i>
+                                        <p style="color:#ffffff;">
+                                            Data Member
+                                            <i class="fas fa-angle-left right mr-2"></i>
+                                        </p>
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/tables/data.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon" style="color:#ffd204;"></i>
-                                        <p style="color:#ffd204;">Minggu ini</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/tables/jsgrid.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon" style="color:#ffd204;"></i>
-                                        <p style="color:#ffd204;">Bulan ini</p>
-                                    </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="pages/tables/simple.html" class="nav-link">
+                                                <i class="far fa-circle nav-icon" style="color:#ffffff;"></i>
+                                                <p style="color:#ffffff;">Hari ini</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pages/tables/data.html" class="nav-link">
+                                                <i class="far fa-circle nav-icon" style="color:#ffffff;"></i>
+                                                <p style="color:#ffffff;">Minggu ini</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pages/tables/jsgrid.html" class="nav-link">
+                                                <i class="far fa-circle nav-icon" style="color:#ffffff;"></i>
+                                                <p style="color:#ffffff;">Bulan ini</p>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </nav>
+                        </nav>
+                    </div>
+                </div>
+
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
