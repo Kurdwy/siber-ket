@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="<?php echo base_url('/Assets/AdminLTE-3.2.0/plugins/daterangepicker/daterangepicker.css') ?>">
     <!-- summernote -->
     <link rel="stylesheet" href="<?php echo base_url('/Assets/AdminLTE-3.2.0/plugins/summernote/summernote-bs4.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('/Assets/AdminLTE-3.2.0/dist/css/alt/style.css') ?>">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

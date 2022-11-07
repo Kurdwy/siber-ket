@@ -1,4 +1,4 @@
-<?php echo view('templates/h'); ?>
+<?php echo view('templates/he'); ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper mt-4">
     <section class="content">
@@ -64,4 +64,3 @@
 </div>
 </div>
 </div>
-<?php echo view('templates/f'); ?>
