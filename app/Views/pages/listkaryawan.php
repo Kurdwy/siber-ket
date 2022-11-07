@@ -53,7 +53,28 @@
                                 </tr>
                             </thead>
                             <tbody>
+                            <?php
 
+                $no = 1;
+
+                foreach ($karyawan as $kry) :
+                  $dataKaryawan = $kry['nik']
+                ?>
+
+                  <tr>
+                    <th scope="row"><?= $no ?></th>
+                    <td><?= $kry['nik'] ?></td>
+                    <td><?= $kry['nama'] ?></td>
+                    <td><?= $kry['created_at'] ?></td>
+                    
+                  </tr>
+
+                <?php
+
+                  $no++;
+                endforeach
+
+                ?>
                             </tbody>
                         </table>
 

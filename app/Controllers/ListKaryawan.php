@@ -11,12 +11,14 @@ class ListKaryawan extends BaseController
     public function index()
     {
         $karyawanModel = new Karyawan();
+        $karyawan = $karyawanModel->findAll();
+
         $data = [
-            'karyawan' => $karyawanModel->findAll()
+            'karyawan' => $karyawan
         ];
 
         return view('templates/h', $data)
-            . view('pages/dashboardadmin', $data)
+            . view('pages/listkaryawan', $data)
             . view('templates/f', $data);
     }
 }

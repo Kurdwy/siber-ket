@@ -49,7 +49,7 @@ $routes->get('/logout', 'LoginKaryawan::logout');
 $routes->get('/dashboardkaryawan', 'DashboardKaryawan::index');
 $routes->post('/dashboardkaryawan', 'DashboardKaryawan::index');
 
-
+$routes->get('/listkaryawan', 'ListKaryawan::index');
 
 
 
