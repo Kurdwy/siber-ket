@@ -51,7 +51,8 @@ $routes->post('/dashboardkaryawan', 'DashboardKaryawan::index');
 
 $routes->get('/listkaryawan', 'ListKaryawan::index');
 $routes->post('/listkaryawan', 'ListKaryawan::index');
-
+$routes->get('/regis', 'Regis::create');
+$routes->post('/regis/store', 'Regis::store');
 
 
 $routes->post('/formloginadmin/process', 'LoginAdmin::process');

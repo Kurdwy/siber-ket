@@ -13,26 +13,26 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form>
+              <form action="/regis/store" method="post">
                 <div class= "card-body">
                 <div class="row">
                   <div class="form-group col-12">
-                    <label for="exampleInputEmail1">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="exampleInputName" placeholder="Masukkan Nama Lengkap">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap" name="nama">
                   </div>
                   <div class="form-group col-12">
-                    <label for="exampleInputEmail1">Tempat Lahir</label>
-                    <input type="text" class="form-control" id="exampleInputPlace" placeholder="Masukkan Tempat Lahir">
+                    <label for="tempatLahir">Tempat Lahir</label>
+                    <input type="text" class="form-control" id="tempatLahir" placeholder="Masukkan Tempat Lahir" name="tempatLahir">
                   </div>
                     <div class="col-sm-6">
                         <!-- <div class="form-group"> -->
-                            <label for="exampleInputEmail1">Tanggal Lahir</label>
-                            <input type="date" class="form-control" id="exampleInputPlace" placeholder="Masukkan Tanggal Lahir">
+                            <label for="tanggalLahir">Tanggal Lahir</label>
+                            <input type="date" class="form-control" id="tanggalLahir" placeholder="Masukkan Tanggal Lahir" name="tanggalLahir">
                         </div>
                     <div class="col-6">
                     <div class="form-group">
-                        <label>Jenis Kelamin</label>
-                        <select class="form-control">
+                        <label for="jenisKelamin">Jenis Kelamin</label>
+                        <select class="form-control" id="jenisKelamin" name="jenisKelamin">
                           <option selected>---Pilih Jenis Kelamin---</option>
                           <option>Pria</option>
                           <option>Wanita</option>
@@ -40,17 +40,17 @@
                       </div>
                     </div>
                   <div class="form-group col-12">
-                    <label for="exampleInputEmail1">NIK</label>
-                    <input type="text" class="form-control" id="exampleInputPlace" placeholder="Masukkan No. NIK">
+                    <label for="nik">NIK</label>
+                    <input type="text" class="form-control" id="nik" placeholder="Masukkan No. NIK" name="nik">
                   </div>
                   <div class="form-group col-12">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="pin">PIN</label>
+                    <input type="password" class="form-control" id="pin" placeholder="PIN" name="pin">
                   </div>
-                  <div class="form-group col-12">
-                    <label for="exampleInputPassword1">Confirm Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
-                  </div>
+                  <!-- <div class="form-group col-12">
+                    <label for="confirmPin">Confirm PIN</label>
+                    <input type="password" class="form-control" id="confirmPin" placeholder="Confirm PIN">
+                  </div> -->
                 </div>
                 <div>
                     <button type="submit" class="btn" style="background-color: #800000; color: white">Submit</button>
