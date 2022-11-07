@@ -44,6 +44,8 @@
                                     <th scope="col">NIK</th>
                                     <th scope="col">Nama Lengkap</th>
                                     <th scope="col">Created_At</th>
+                                    <th scope="col">Action</th>
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -60,6 +62,14 @@
                                         <td><?= $kry['nik'] ?></td>
                                         <td><?= $kry['nama'] ?></td>
                                         <td><?= $kry['created_at'] ?></td>
+                                        <td>
+                                            <div class="d-flex">
+                                                <a class="btn btn-warning mr-3" href="/formeditkaryawan/<?= $kry['nik'] ?>"> Edit</a>
+                                                <form action="/listkaryawan/delete/<?= $kry['nik'] ?>" method="post">
+                                                    <input name="_method" value="DELETE" type="hidden">
+                                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                                </form>
+                                        </td>
 
                                     </tr>
 
