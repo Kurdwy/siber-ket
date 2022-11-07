@@ -1,0 +1,28 @@
+CRITICAL - 2022-11-08 00:25:30 --> Invalid file: template/h.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/h.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template/h', [], true)
+ 3 APPPATH\Views\pages\formeditmember.php(1): view('template/h')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\formeditmember.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/formeditmember', [], true)
+ 7 APPPATH\Controllers\Pages.php(26): view('pages/formeditmember')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->view('formeditmember', '123432121234')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-08 00:25:58 --> Invalid file: template/h.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/h.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('template/h', [], true)
+ 3 APPPATH\Views\pages\formeditmember.php(1): view('template/h')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\formeditmember.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pages/formeditmember', [], true)
+ 7 APPPATH\Controllers\Pages.php(26): view('pages/formeditmember')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Pages->view('formeditmember', '123432121234')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

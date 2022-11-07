@@ -12,4 +12,18 @@ class Karyawan extends Model
     protected $useAutoIncrement = true;
     protected $allowedFields    = ['nik', 'pin', 'nama'];
 
+    public function search($keyword)
+    {
+        $builder = $this->table('karyawan');
+        $builder->Like('nama', $keyword);
+        $builder->orLike('nik', $keyword);
+        return $builder;
+    }
+
+    public function saveKaryawan($data)
+    {
+        $query = $this->db->table($this->table)->insert($data);
+        return $query;
+    }
+
 }

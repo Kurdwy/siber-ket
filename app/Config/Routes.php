@@ -50,6 +50,7 @@ $routes->get('/dashboardkaryawan', 'DashboardKaryawan::index');
 $routes->post('/dashboardkaryawan', 'DashboardKaryawan::index');
 
 $routes->get('/listkaryawan', 'ListKaryawan::index');
+$routes->post('/listkaryawan', 'ListKaryawan::index');
 
 
 

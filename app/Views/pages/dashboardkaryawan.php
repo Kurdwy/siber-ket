@@ -74,9 +74,34 @@
                     <td>
                       <div class="d-flex">
                         <a class="btn btn-warning mr-3" href="/formeditmember/<?= $mbr['nik'] ?>"> Edit</a>
-                        <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
+                        <a class="btn btn-danger btn-sm btn-delete " data-bs-toggle="modal" data-bs-target="exampleModalLabel" data-id="<?= $mbr['nik'] ?>">Delete</a>
+                        <!-- <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
                           <input name="_method" value="DELETE" type="hidden">
                           <button type="submit" class="btn btn-danger">Delete</button>
+                        </form> -->
+                        <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
+                          <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Delete Product</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+
+                                  <h4>Are you sure want to delete this product?</h4>
+
+                                </div>
+                                <div class="modal-footer">
+                                  <input type="hidden" name="_method" value="DELETE">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                  <button type="submit" class="btn btn-primary">Yes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </form>
                       </div>
                     </td>

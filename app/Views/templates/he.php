@@ -34,8 +34,6 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
-
-
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
@@ -106,6 +104,20 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <div class="container-bg">
+                            <div class="card-bg">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-bar" style="color:#ffffff;"></i>
+                                        <p style="color:#ffffff;">
+                                            Dashboard
+                                            <!-- <i class="fas fa-angle-left right"></i> -->
+                                        </p>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+
+                        <div class="container-bg mt-4">
                             <div class="card-bg">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
