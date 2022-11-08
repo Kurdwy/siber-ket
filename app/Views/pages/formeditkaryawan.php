@@ -13,26 +13,26 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="/listkaryawan" method="post">
+              <form action="/formeditkaryawan/update/<?= $nik ?>" method="post">
                 <div class= "card-body">
                 <div class="row">
                   <div class="form-group col-12">
                     <label for="nama">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap" name="nama">
+                    <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap" name="nama" value="<?= $nama ?>">
                   </div>
                   <div class="form-group col-12">
                     <label for="tempatLahir">Tempat Lahir</label>
-                    <input type="text" class="form-control" id="tempatLahir" placeholder="Masukkan Tempat Lahir" name="tempatLahir">
+                    <input type="text" class="form-control" id="tempatLahir" placeholder="Masukkan Tempat Lahir" name="tempatLahir" value="<?= $tempatLahir ?>">
                   </div>
                     <div class="col-sm-6">
                         <!-- <div class="form-group"> -->
                             <label for="tanggalLahir">Tanggal Lahir</label>
-                            <input type="date" class="form-control" id="tanggalLahir" placeholder="Masukkan Tanggal Lahir" name="tanggalLahir">
+                            <input type="date" class="form-control" id="tanggalLahir" placeholder="Masukkan Tanggal Lahir" name="tanggalLahir" value="<?= $tanggalLahir ?>">
                         </div>
                     <div class="col-6">
                     <div class="form-group">
                         <label for="jenisKelamin">Jenis Kelamin</label>
-                        <select class="form-control" id="jenisKelamin" name="jenisKelamin">
+                        <select class="form-control" id="jenisKelamin" name="jenisKelamin" value="<?= $jenisKelamin ?>">
                           <option selected>---Pilih Jenis Kelamin---</option>
                           <option>Pria</option>
                           <option>Wanita</option>
@@ -41,11 +41,11 @@
                     </div>
                   <div class="form-group col-12">
                     <label for="nik">NIK</label>
-                    <input type="text" class="form-control" id="nik" placeholder="Masukkan No. NIK" name="nik">
+                    <input type="text" class="form-control" id="nik" placeholder="Masukkan No. NIK" name="nik" value="<?= $nik ?>">
                   </div>
                   <div class="form-group col-12">
                     <label for="pin">PIN</label>
-                    <input type="password" class="form-control" id="pin" placeholder="PIN" name="pin">
+                    <input type="password" class="form-control" id="pin" placeholder="PIN" name="pin" value="<?= $pin ?>">
                   </div>
                   <!-- <div class="form-group col-12">
                     <label for="confirmPin">Confirm PIN</label>

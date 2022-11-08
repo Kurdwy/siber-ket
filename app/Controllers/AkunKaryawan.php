@@ -84,12 +84,12 @@ class AkunKaryawan extends BaseController
             'jenisKelamin' => 'required',
             'pin' => 'required',
         ])) {
-            return redirect()->to('/listkaryawan');
+            //return redirect()->to('/listkaryawan');
         }
         $karyawanModel = new Karyawan();
         $data = [
             'nik' => $this->request->getVar('nik'),
-            'namaLengkap' => $this->request->getVar('namaLengkap'),
+            'nama' => $this->request->getVar('nama'),
             'tempatLahir' => $this->request->getVar('tempatLahir'),
             'tanggalLahir' => $this->request->getVar('tanggalLahir'),
             'jenisKelamin' => $this->request->getVar('jenisKelamin'),

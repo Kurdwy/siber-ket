@@ -51,7 +51,7 @@ $routes->post('/dashboardkaryawan', 'DashboardKaryawan::index');
 
 $routes->get('/listkaryawan', 'ListKaryawan::index');
 $routes->post('/listkaryawan', 'ListKaryawan::index');
-$routes->get('/formeditkaryawan/edit/(:num)', 'AkunKaryawan::edit/$1');
+$routes->get('/formeditkaryawan/(:num)', 'AkunKaryawan::edit/$1');
 $routes->post('/formeditkaryawan/update/(:num)', 'AkunKaryawan::update/$1');
 $routes->get('/regis', 'AkunKaryawan::create');
 $routes->post('/regis/store', 'AkunKaryawan::store');
