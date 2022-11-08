@@ -9,11 +9,11 @@
             <!-- general form elements -->
             <div class="card card-danger">
               <div class="card-header" style="background-color: #800000; color: white">
-                <h3 class="card-title">Registrasi Akun karyawan</h3>
+                <h3 class="card-title">Edit Akun karyawan</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="/regis/store" method="post">
+              <form action="/listkaryawan" method="post">
                 <div class= "card-body">
                 <div class="row">
                   <div class="form-group col-12">
