@@ -1,46 +1,75 @@
-<?php echo view('templates/he'); ?>
-<div class="content-wrapper mt-4">
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- left column -->
-                <div class="col-md-12">
-                    <!-- general form elements -->
-                    <div class="card card-danger">
-                        <div class="card-header" style="background-color: #800000; color: white">
-                            <h3 class="card-title">Profile</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="row ">
-                                <div class="card-body box-profile">
-                                    <div class="float-left">
-                                        <div class="text-center">
-                                            <img class="profile-user-img img-fluid img-circle" src="/Assets/AdminLTE-3.2.0/dist/img/user4-128x128.jpg" alt="User profile picture">
-                                        </div>
-                                        <h3 class="profile-username text-center">Wawan</h3>
-                                        <p class="text-muted text-center">Karyawan</p>
-                                    </div>
-                                    <div class="col mr-6">
-                                        <ul class="list-group list-group-unbordered mb-3">
-                                            <li class="list-group-item">
-                                                <b>Nama Lengkap :</b> <a>Wawan Suripto</a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <b>NIK :</b> <a>123456789012</a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <b>Cabang :</b> <a>Gedong Meneng</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+<?php echo view('templates/h'); ?>
+<div class="container">
+    <html>
+    <div class="main-body">
 
+        <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                            <div class="mt-3">
+                                <h4>Asep</h4>
+                                <p class="text-secondary mb-1">Karyawan</p>
+                                <p class="text-muted font-size-sm">Way Halim</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card mb-3 mt-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Nama Lengkap</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                Asep Surasep
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">NIK</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                123123123
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Nomor Telepon</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                081234567890
+                            </div>
+                        </div>
+                        <hr>
+                        </hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Alamat</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                Way Halim
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a button class="btn" style="background-color: #800000; color: white;" href="/editprofilekaryawan">Edit</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </div>
+
+</html>
+
 <?php echo view('templates/f'); ?>
