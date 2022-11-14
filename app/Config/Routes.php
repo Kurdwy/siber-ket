@@ -60,6 +60,8 @@ $routes->delete('/listkaryawan/delete/(:num)', 'AkunKaryawan::delete/$1');
 
 $routes->post('/formloginadmin/process', 'LoginAdmin::process');
 $routes->get('/logout', 'LoginAdmin::logout');
+$routes->get('/dashboardadmin', 'DashboardAdmin::index');
+
 
 $routes->get('(:any)', 'Pages::view/$1');
 // $routes->post('/formtambahmember', 'TambahMember::create');

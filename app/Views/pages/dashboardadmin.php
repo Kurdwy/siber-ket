@@ -1,26 +1,34 @@
-<?php echo view('templates/he'); ?>
-<!-- <div class="container">
-    <div class="card text-white bg-primary mb-3">
-        <div class="card-header"> LAPORAN GRAFIK</div>
-        <div class="card-body bg-white viewTampilGrafik">
+<div class="content-wrapper">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <!-- small box -->
+                    <div class="small-box bg-primary col-6">
+                        <div class="inner">
+                            <h3><?= $jumlah_Karyawan; ?></h3>
 
+                            <p>Jumlah Karyawan</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-table"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-6">
+                    <div class="small-box bg-primary col-6">
+                        <div class="inner">
+                            <h3><?= $jumlah_Member; ?></h3>
+
+                            <p>Jumlah Member</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-table"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 </div>
-<script>
-    function tampilGrafik() {
-        $.ajax({
-            type: "post",
-            url: "/DashboardAdmin/tampilGrafikTanggal",
-            data: {
-                bulan : '10-2022'
-            },
-            dataType: "json",
-            success: function(response) {
-
-            }, er
-            
-        });
-    }
-</script> -->
-<?php echo view('templates/f'); ?>
+</section>
+</div>
