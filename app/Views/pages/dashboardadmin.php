@@ -28,7 +28,14 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="column">
+                    <div class="container">
+                        <h4>Data Pendaftaran Member</h4>
+                        <canvas id="created_at" width="400" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
-</div>
-</section>
+    </section>
 </div>

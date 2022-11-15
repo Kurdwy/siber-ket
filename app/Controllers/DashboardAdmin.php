@@ -15,10 +15,15 @@ class DashboardAdmin extends BaseController
         $jumlah_Member =  $memberModel->countAllResults();
         $jumlah_Karyawan =  $karyawanModel->countAllResults();
 
+        $created_at = $memberModel->select('COUNT(nik) AS jumlah')
+            ->groupBy('created_at')
+            ->get();
+
         return view('templates/he')
             . view('pages/dashboardadmin', [
                 'jumlah_Member' => $jumlah_Member,
                 'jumlah_Karyawan' => $jumlah_Karyawan,
+                'created_at' => $created_at,
             ])
             . view('templates/f');
     }
