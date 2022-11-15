@@ -51,7 +51,7 @@
                         <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/dist/img/avatar2.png') ?>" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">UJANG SLEBEW</a>
+                        <a href="/viewakun" class="d-block">UJANG SLEBEW</a>
                     </div>
                 </div>
             </ul>
@@ -99,12 +99,25 @@
                     }
                 </style>
                 <!-- Sidebar Menu -->
-                <div class="container-bg">
-                    <div class="card-bg">
-                        <nav class="mt-4">
-                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                                <!-- Add icons to the links using the .nav-icon class
+                <nav class="mt-4">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+                        <div class="container-bg">
+                            <div class="card-bg">
+                                <li class="nav-item">
+                                    <a href="/dashboardkaryawan" class="nav-link">
+                                        <i class="nav-icon fas fa-bar" style="color:#ffffff;"></i>
+                                        <p style="color:#ffffff;">
+                                            Data Member
+                                            <!-- <i class="fas fa-angle-left right"></i> -->
+                                        </p>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                        <!-- <div class="container-bg mt-4">
+                            <div class="card-bg">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="nav-icon fas fa-table float" style="color:#ffffff;"></i>
@@ -134,12 +147,14 @@
                                         </li>
                                     </ul>
                                 </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <!-- /.sidebar-menu -->
+                            </div>
+                        </div> -->
+                    </ul>
+                </nav>
             </div>
-            <!-- /.sidebar -->
-        </aside>
+    </div>
+
+    <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+    </aside>

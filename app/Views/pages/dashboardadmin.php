@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <!-- small box -->
-                    <div class="small-box bg-primary col-6">
+                    <div class="small-box col-6" style="background-color: #800000; color: white;">
                         <div class="inner">
                             <h3><?= $jumlah_Karyawan; ?></h3>
 
@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-6">
-                    <div class="small-box bg-primary col-6">
+                    <div class="small-box col-6" style="background-color: #800000; color: white;">
                         <div class="inner">
                             <h3><?= $jumlah_Member; ?></h3>
 

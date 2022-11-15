@@ -43,6 +43,10 @@
                                     <th scope="col">No</th>
                                     <th scope="col">NIK</th>
                                     <th scope="col">Nama Lengkap</th>
+                                    <th scope="col">Tempat lahir</th>
+                                    <th scope="col">Tanggal lahir</th>
+                                    <th scope="col">Password</th>
+                                    <th scope="col">Nomor Telepon</th>
                                     <th scope="col">Created_At</th>
                                     <th scope="col">Action</th>
 
@@ -61,6 +65,10 @@
                                         <th scope="row"><?= $no ?></th>
                                         <td><?= $kry['nik'] ?></td>
                                         <td><?= $kry['nama'] ?></td>
+                                        <td><?= $kry['tempatLahir'] ?></td>
+                                        <td><?= $kry['tanggalLahir'] ?></td>
+                                        <td><?= $kry['pin'] ?></td>
+                                        <td><?= $kry['nomorTelepon'] ?></td>
                                         <td><?= $kry['created_at'] ?></td>
                                         <td>
                                             <div class="d-flex">

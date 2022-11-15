@@ -44,7 +44,7 @@
             </ul>
 
             <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
+            <!-- <ul class="navbar-nav ml-auto">
                 <div class="user-panel d-flex">
                     <div class="image">
                         <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/dist/img/avatar2.png') ?>" class="img-circle elevation-2" alt="User Image">
@@ -53,7 +53,7 @@
                         <a href="#" class="d-block">FARHAN KEBAB</a>
                     </div>
                 </div>
-            </ul>
+            </ul> -->
             <!-- Navbar Search
                 <li class="nav-item">
                     <a class="nav-link" data-widget="navbar-search" href="#" role="button">
@@ -106,7 +106,7 @@
                         <div class="container-bg">
                             <div class="card-bg">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="/dashboardadmin" class="nav-link">
                                         <i class="nav-icon fas fa-bar" style="color:#ffffff;"></i>
                                         <p style="color:#ffffff;">
                                             Dashboard
@@ -164,3 +164,5 @@
             </div>
             <!-- /.sidebar -->
         </aside>
+
+        <script src="/Assets/AdminLTE-3.2.0/dist/js/chart.bundle.min.js"></script>
