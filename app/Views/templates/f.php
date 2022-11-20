@@ -1,5 +1,3 @@
-
-
 <footer class="main-footer" class="container-fluid" style="text-align:center; background-color:#800000; color:white;">
     <!-- To the right -->
     <div>
@@ -49,7 +47,6 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url('/Assets/AdminLTE-3.2.0/dist/js/demo.js') ?>"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?php echo base_url('/Assets/AdminLTE-3.2.0/dist/js/pages/dashboard.js') ?>"></script>
 </body>
 
 </html>

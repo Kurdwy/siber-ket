@@ -1,3 +1,6 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -22,17 +25,17 @@
           <div class="card">
             <div class="card-header">
               <div class="row">
-                <div class="col-4">
+                <div class="col-2 float-left">
+                  <a href="/formtambahmember" type="button" class="btn" style="background-color: #800000; color: white">Tambah</a>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-6 float-left">
                   <form action="" method="POST">
                     <div class="input-group">
                       <input type="text" class="form-control" value="<?= $keyword ?>" placeholder="Masukan Keyword Pencarian" name="keyword" autocomplete="off">
                       <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
                     </div>
                   </form>
-                </div>
-                <div class="col-7"></div>
-                <div class="col-1">
-                  <a href="/formtambahmember" type="button" class="btn" style="background-color: #800000; color: white">Tambah</a>
                 </div>
               </div>
             </div>
@@ -74,38 +77,36 @@
                     <td>
                       <div class="d-flex">
                         <a class="btn btn-warning mr-3" href="/formeditmember/<?= $mbr['nik'] ?>"> Edit</a>
-                        <a class="btn btn-danger btn-sm btn-delete " data-bs-toggle="modal" data-bs-target="exampleModalLabel" data-id="<?= $mbr['nik'] ?>">Delete</a>
-                        <!-- <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
-                          <input name="_method" value="DELETE" type="hidden">
-                          <button type="submit" class="btn btn-danger">Delete</button>
-                        </form> -->
-                        <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
-                          <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Delete Product</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Delete
+                        </button>
 
-                                  <h4>Are you sure want to delete this product?</h4>
-
-                                </div>
-                                <div class="modal-footer">
-                                  <input type="hidden" name="_method" value="DELETE">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                                  <button type="submit" class="btn btn-primary">Yes</button>
-                                </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Member</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                Apakah yakin akan menghapus data?
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
+                                  <input name="_method" value="DELETE" type="hidden">
+                                  <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
                               </div>
                             </div>
                           </div>
-                        </form>
-                      </div>
+                        </div>
                     </td>
                   </tr>
+
+
 
                 <?php
 
