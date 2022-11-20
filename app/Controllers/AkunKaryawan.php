@@ -34,7 +34,7 @@ class AkunKaryawan extends BaseController
             'jenisKelamin' => 'required',
             'nik' => 'required',
             'pin' => 'required',
-            //'confirmPin' => 'required',
+            'nomorTelepon' => 'required',
 
         ])) {
             return redirect()->to('/listkaryawan');
@@ -47,6 +47,8 @@ class AkunKaryawan extends BaseController
             'jenisKelamin' => $this->request->getPost('jenisKelamin'),
             'nik' => $this->request->getPost('nik'),
             'pin' => $this->request->getPost('pin'),
+            'nomorTelepon' => $this->request->getPost('nomorTelepon'),
+
         ];
 
         $karyawanModel->saveKaryawan($data);
@@ -83,6 +85,7 @@ class AkunKaryawan extends BaseController
             'tanggalLahir' => 'required',
             'jenisKelamin' => 'required',
             'pin' => 'required',
+            'nomorTelepon' => 'required',
         ])) {
             //return redirect()->to('/listkaryawan');
         }
@@ -94,6 +97,8 @@ class AkunKaryawan extends BaseController
             'tanggalLahir' => $this->request->getVar('tanggalLahir'),
             'jenisKelamin' => $this->request->getVar('jenisKelamin'),
             'pin' => $this->request->getVar('pin'),
+            'nomorTelepon' => $this->request->getVar('nomorTelepon'),
+
         ];
 
         $karyawanModel->update($nik, $data);

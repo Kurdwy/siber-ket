@@ -47,10 +47,6 @@
                     <input type="password" class="form-control" id="pin" placeholder="PIN" name="pin">
                   </div>
                   <div class="form-group col-6">
-                    <label for="Alamat">Alamat</label>
-                    <input type="text" class="form-control" id="Alamat" placeholder="Alamat">
-                  </div>
-                  <div class="form-group col-6">
                     <label for="nomorTelepon">Nomor Telepon</label>
                     <input type="text" class="form-control" id="nomorTelepon" placeholder="Nomor Telepon">
                   </div>

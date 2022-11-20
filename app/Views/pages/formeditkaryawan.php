@@ -47,10 +47,10 @@
                     <label for="pin">PIN</label>
                     <input type="password" class="form-control" id="pin" placeholder="PIN" name="pin" value="<?= $pin ?>">
                   </div>
-                  <!-- <div class="form-group col-12">
-                    <label for="confirmPin">Confirm PIN</label>
-                    <input type="password" class="form-control" id="confirmPin" placeholder="Confirm PIN">
-                  </div> -->
+                  <div class="form-group col-12">
+                    <label for="nomorTelepon">Nomor Telepon</label>
+                    <input type="text" class="form-control" id="nomorTelepon" placeholder="Nomor Telepon" name="nomorTelepon" value="<?= $nomorTelepon ?>">
+                  </div>
                 </div>
                 <div>
                     <button type="submit" class="btn" style="background-color: #800000; color: white">Submit</button>

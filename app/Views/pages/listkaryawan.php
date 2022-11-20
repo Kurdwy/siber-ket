@@ -47,7 +47,6 @@
                                     <th scope="col">Tanggal lahir</th>
                                     <th scope="col">Password</th>
                                     <th scope="col">Nomor Telepon</th>
-                                    <th scope="col">Created_At</th>
                                     <th scope="col">Action</th>
 
                                 </tr>
@@ -69,7 +68,6 @@
                                         <td><?= $kry['tanggalLahir'] ?></td>
                                         <td><?= $kry['pin'] ?></td>
                                         <td><?= $kry['nomorTelepon'] ?></td>
-                                        <td><?= $kry['created_at'] ?></td>
                                         <td>
                                             <div class="d-flex">
                                                 <a class="btn btn-warning mr-3" href="/formeditkaryawan/<?= $kry['nik'] ?>"> Edit</a>

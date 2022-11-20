@@ -13,7 +13,7 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form action="/dashboardkaryawan" method="post">
+                        <form action="/formeditmember/update/<?= $nik ?>" method="post">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="form-group col-6">

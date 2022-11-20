@@ -47,7 +47,6 @@
                   <th scope="col">Tanggal Lahir</th>
                   <th scope="col">Jenis Kelamin</th>
                   <th scope="col">Alamat</th>
-                  <th scope="col">Created_At</th>
 
                   <th scope="col">Action</th>
                 </tr>
@@ -70,17 +69,16 @@
                     <td><?= $mbr['tanggalLahir'] ?></td>
                     <td><?= $mbr['jenisKelamin'] ?></td>
                     <td><?= $mbr['alamat'] ?></td>
-                    <td><?= $mbr['created_at'] ?></td>
                     <td>
                       <div class="d-flex">
-                        <a class="btn btn-warning mr-3" href="/formeditmember/<?= $mbr['nik'] ?>"> Edit</a>
-                        <a class="btn btn-danger btn-sm btn-delete " data-bs-toggle="modal" data-bs-target="exampleModalLabel" data-id="<?= $mbr['nik'] ?>">Delete</a>
+                        <a class="btn btn-warning mr-3" href="/formeditmember/edit/<?= $mbr['nik'] ?>"> Edit</a>
+                        <!-- <a class="btn btn-danger btn-sm btn-delete " data-bs-toggle="modal" data-bs-target="exampleModalLabel" data-id="<?= $mbr['nik'] ?>">Delete</a> -->
                         <!-- <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
                           <input name="_method" value="DELETE" type="hidden">
                           <button type="submit" class="btn btn-danger">Delete</button>
                         </form> -->
                         <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
-                          <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <!-- <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
@@ -101,7 +99,10 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
+                          </div> -->
+                          <input name="_method" value="DELETE" type="hidden">
+                          <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
                         </form>
                       </div>
                     </td>

@@ -66,6 +66,8 @@ $routes->get('/dashboardadmin', 'DashboardAdmin::index');
 $routes->get('(:any)', 'Pages::view/$1');
 // $routes->post('/formtambahmember', 'TambahMember::create');
 // $routes->post('/formtambahmember/store', 'TambahMember::store');
+$routes->get('/logout', 'LoginKaryawan::logout');
+
 $routes->get('/formloginkaryawan', 'LoginKaryawan::index');
 $routes->get('/formloginadmin', 'LoginAdmin::index');
 

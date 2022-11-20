@@ -10,7 +10,7 @@ class Karyawan extends Model
     protected $primaryKey       = 'nik';
     protected $useTimesStamps   = true;
     protected $useAutoIncrement = true;
-    protected $allowedFields    = ['nik', 'pin', 'nama', 'tempatLahir', 'tanggalLahir', 'jenisKelamin', 'Alamat', 'nomorTelepon','created_at', 'update_at'];
+    protected $allowedFields    = ['nik', 'pin', 'nama', 'tempatLahir', 'tanggalLahir', 'jenisKelamin', 'nomorTelepon','created_at', 'update_at'];
 
     public function search($keyword)
     {

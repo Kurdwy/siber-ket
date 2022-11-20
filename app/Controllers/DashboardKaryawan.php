@@ -104,14 +104,14 @@ class DashboardKaryawan extends BaseController
     public function update($nik)
     {
         if (!$this->validate([
-            'namaLengkap',
-            'tanggalLahir',
-            'nik',
-            'jenisKelamin',
-            'tempatLahir',
-            'alamat',
+            'namaLengkap'=> 'required',
+            'tanggalLahir'=> 'required',
+            'nik'=> 'required',
+            'jenisKelamin'=> 'required',
+            'tempatLahir'=> 'required',
+            'alamat'=> 'required',
         ])) {
-            return redirect()->to('/dashboardkaryawan');
+            //return redirect()->to('/dashboardkaryawan');
         }
         $memberModel = new Member();
         $data = [
