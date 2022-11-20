@@ -120,7 +120,7 @@
                         <div class="container-bg mt-4">
                             <div class="card-bg">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="/karyawan/logout" class="nav-link">
                                         <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
                                         <p style="color:#ffffff;">
                                             Logout

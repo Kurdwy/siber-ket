@@ -18,11 +18,10 @@ class Filters extends BaseConfig
      * @var array
      */
     public $aliases = [
-        'csrf'          => CSRF::class,
-        'toolbar'       => DebugToolbar::class,
-        'honeypot'      => Honeypot::class,
-        'invalidchars'  => InvalidChars::class,
-        'secureheaders' => SecureHeaders::class,
+        'csrf'     => CSRF::class,
+		'toolbar'  => DebugToolbar::class,
+		'honeypot' => Honeypot::class,
+		'usersAuth' => \App\Filters\UsersAuthFilter::class,
     ];
 
     /**
@@ -32,18 +31,25 @@ class Filters extends BaseConfig
      * @var array
      */
     public $globals = [
-        'before' => [
-            // 'honeypot',
-            // 'login'
-            // 'csrf',
-            // 'invalidchars',
-        ],
-        'after' => [
-            'toolbar',
-            // 'honeypot',
-            // 'secureheaders',
-        ],
-    ];
+		'before' => [
+			'csrf',
+			'usersAuth' => [
+				'except' => [
+                    '',
+                    'about',
+                    'guide',
+                    'formloginadmin',
+                    'formloginkaryawan',
+					'admin/logout',
+					'karyawan/logout'
+				]
+			]
+		],
+		'after'  => [
+			'toolbar',
+			//'honeypot'
+		],
+	];
 
     /**
      * List of filter aliases that works on a

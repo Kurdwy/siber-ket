@@ -28,7 +28,9 @@ class LoginAdmin extends BaseController
                 ]);
                 return redirect()->to(base_url('dashboardadmin'));
             } else {
-                session()->setFlashdata('error', 'Username & Password Salah');
+                session()->set([
+                    'logged_in' => FALSE
+                ]);                session()->setFlashdata('error', 'Username & Password Salah');
                 return redirect()->back();
             }
         } else {
