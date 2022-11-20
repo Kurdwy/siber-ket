@@ -158,6 +158,21 @@
                                 </li>
                             </div>
                         </div>
+
+
+                        <div class="container-bg mt-4">
+                            <div class="card-bg">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
+                                        <p style="color:#ffffff;">
+                                            Logout
+                                            <!-- <i class="fas fa-angle-left right"></i> -->
+                                        </p>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
