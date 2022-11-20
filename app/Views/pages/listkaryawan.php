@@ -71,10 +71,31 @@
                                         <td>
                                             <div class="d-flex">
                                                 <a class="btn btn-warning mr-3" href="/formeditkaryawan/<?= $kry['nik'] ?>"> Edit</a>
-                                                <form action="/listkaryawan/delete/<?= $kry['nik'] ?>" method="post">
-                                                    <input name="_method" value="DELETE" type="hidden">
-                                                    <button type="submit" class="btn btn-danger">Delete</button>
-                                                </form>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Delete
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Hapus Karyawan</h1>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Apakah yakin ingin menghapus karyawan ?
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                                <form action="/listkaryawan/delete/<?= $kry['nik'] ?>" method="post">
+                                                                    <input name="_method" value="DELETE" type="hidden">
+                                                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                         </td>
 
                                     </tr>
