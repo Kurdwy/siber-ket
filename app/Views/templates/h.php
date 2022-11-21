@@ -107,7 +107,7 @@
                             <div class="card-bg">
                                 <li class="nav-item">
                                     <a href="/dashboardkaryawan" class="nav-link">
-                                        <i class="nav-icon fas fa-bar" style="color:#ffffff;"></i>
+                                        <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
                                         <p style="color:#ffffff;">
                                             Data Member
                                             <!-- <i class="fas fa-angle-left right"></i> -->
@@ -121,7 +121,7 @@
                             <div class="card-bg">
                                 <li class="nav-item">
                                     <a href="/karyawan/logout" class="nav-link">
-                                        <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
+                                        <i class="fa fa-sign-out-alt" style="color:#ffffff;"></i>
                                         <p style="color:#ffffff;">
                                             Logout
                                             <!-- <i class="fas fa-angle-left right"></i> -->

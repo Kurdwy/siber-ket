@@ -73,9 +73,9 @@
                                         <td><?= $kry['nomorTelepon'] ?></td>
                                         <td>
                                             <div class="d-flex">
-                                                <a class="btn btn-warning mr-3" href="/formeditkaryawan/<?= $kry['nik'] ?>"> Edit</a>
+                                                <a class="btn btn-warning mr-3" href="/formeditkaryawan/<?= $kry['nik'] ?>"><i class="fa fa-pencil-alt" aria-hidden="true"></i> Edit</a>
                                                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                    Delete
+                                                    <i class="fa fa-trash-alt mr-1" aria-hidden="true"></i>Delete
                                                 </button>
 
                                                 <!-- Modal -->

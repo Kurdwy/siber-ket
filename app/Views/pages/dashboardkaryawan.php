@@ -26,7 +26,7 @@
             <div class="card-header">
               <div class="row">
                 <div class="col-2 float-left">
-                  <a href="/formtambahmember" type="button" class="btn" style="background-color: #800000; color: white">Tambah</a>
+                  <a href="/formtambahmember" type="button" class="btn" style="background-color: #800000; color: white"><i class="fa fa-plus mr-1" aria-hidden="true"></i>Tambah</a>
                 </div>
                 <div class="col-4"></div>
                 <div class="col-6 float-left">
@@ -74,9 +74,9 @@
                     <td><?= $mbr['alamat'] ?></td>
                     <td>
                       <div class="d-flex">
-                        <a class="btn btn-warning mr-3" href="/formeditmember/edit/<?= $mbr['nik'] ?>"> Edit</a>
+                        <a class="btn btn-warning mr-3" href="/formeditmember/edit/<?= $mbr['nik'] ?>"> <i class="fa fa-pencil-alt" aria-hidden="true"></i> Edit</a>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          Delete
+                          <i class="fa fa-trash-alt mr-1" aria-hidden="true"></i>Delete
                         </button>
 
                         <!-- Modal -->
