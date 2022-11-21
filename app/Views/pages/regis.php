@@ -52,7 +52,7 @@
                   </div>
                 </div>
                 <div>
-                  <button type="submit" class="btn" style="background-color: #800000; color: white">Submit</button>
+                  <button type="submit" class="btn" style="background-color: #800000; color: white"><i class="fa fa-paper-plane mr-1" aria-hidden="true"></i>Submit</button>
                 </div>
               </div>
           </div>

@@ -1,4 +1,3 @@
-<?php echo view('templates/he'); ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper mt-4">
     <section class="content">
@@ -48,7 +47,7 @@
                                         <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamatnya dimana ya?">
                                     </div>
                                     <div>
-                                        <button type="submit" class="btn" style="background-color: #800000; color: white; transform:translate(550%)">Tambah</button>
+                                        <button type="submit" class="btn" style="background-color: #800000; color: white; transform:translate(550%)"><i class="fa fa-paper-plane mr-1" aria-hidden="true"></i>Tambah</button>
                                     </div>
                                 </div>
                             </div>
@@ -61,6 +60,4 @@
                 </form>
             </div>
         </div>
-</div>
-</div>
 </div>

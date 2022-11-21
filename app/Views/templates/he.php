@@ -7,7 +7,6 @@
     <title>Siber-ket</title>
     <link rel="icon shortcut" href="/Assets/AdminLTE-3.2.0/img/Siber-ket-with-bg.png">
 
-
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="<?php echo base_url('/Assets/AdminLTE-3.2.0/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback') ?>">
     <!-- Font Awesome -->
@@ -107,7 +106,7 @@
                             <div class="card-bg">
                                 <li class="nav-item">
                                     <a href="/dashboardadmin" class="nav-link">
-                                        <i class="nav-icon fas fa-bar" style="color:#ffffff;"></i>
+                                        <i class="nav-icon fas fa-tachometer-alt" style="color:#ffffff;"></i>
                                         <p style="color:#ffffff;">
                                             Dashboard
                                             <!-- <i class="fas fa-angle-left right"></i> -->
@@ -164,7 +163,7 @@
                             <div class="card-bg">
                                 <li class="nav-item">
                                     <a href="/admin/logout" class="nav-link">
-                                        <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
+                                        <i class="fa fa-sign-out-alt" style="color:#ffffff;" aria-hidden="true"></i>
                                         <p style="color:#ffffff;">
                                             Logout
                                             <!-- <i class="fas fa-angle-left right"></i> -->
