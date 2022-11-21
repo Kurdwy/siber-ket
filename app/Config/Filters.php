@@ -31,19 +31,20 @@ class Filters extends BaseConfig
      * @var array
      */
     public $globals = [
-		'before' => [
-			'csrf',
-			'usersAuth' => [
-				'except' => [
-                    '',
-                    'about',
-                    'guide',
-                    'formloginadmin',
-                    'formloginkaryawan',
-					'admin/logout',
-					'karyawan/logout'
-				]
-			]
+		 'before' => [
+		// 	'csrf',
+		// 	'usersAuth' => [
+		// 		'except' => [
+        //             '',
+        //             'about',
+        //             'guide',
+        //             'formloginadmin',
+        //             'formloginkaryawan',
+		// 			'admin/logout',
+		// 			'karyawan/logout',
+        //             'listkaryawan/delete/*',
+		// 		]
+		// 	]
 		],
 		'after'  => [
 			'toolbar',

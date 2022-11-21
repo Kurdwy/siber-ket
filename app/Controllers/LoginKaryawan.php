@@ -19,10 +19,10 @@ class LoginKaryawan extends BaseController
             'nik' => $nik,
         ])->first();
         if ($dataKaryawan) {
-            if (password_verify($pin, password_hash($dataKaryawan->pin, PASSWORD_BCRYPT))) {
+            if (password_verify($pin, password_hash($dataKaryawan['pin'], PASSWORD_BCRYPT))) {
                 session()->set([
-                    'nik' => $dataKaryawan->nik,
-                    'nama' => $dataKaryawan->nama,
+                    'nik' => $dataKaryawan['nik'],
+                    'nama' => $dataKaryawan['nama'],
                     'logged_in' => TRUE
                 ]);
                 return redirect()->to(base_url('dashboardkaryawan'));

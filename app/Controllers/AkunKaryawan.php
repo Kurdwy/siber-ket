@@ -37,7 +37,7 @@ class AkunKaryawan extends BaseController
             'nomorTelepon' => 'required',
 
         ])) {
-            return redirect()->to('/listkaryawan');
+            //return redirect()->to('/listkaryawan');
         }
         $karyawanModel = new Karyawan();
         $data = [

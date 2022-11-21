@@ -48,7 +48,7 @@
                   </div>
                   <div class="form-group col-6">
                     <label for="nomorTelepon">Nomor Telepon</label>
-                    <input type="text" class="form-control" id="nomorTelepon" placeholder="Nomor Telepon">
+                    <input type="text" class="form-control" id="nomorTelepon" placeholder="Nomor Telepon" name="nomorTelepon">
                   </div>
                 </div>
                 <div>
