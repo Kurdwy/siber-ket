@@ -12,7 +12,7 @@ class UsersAuthFilter implements FilterInterface
     {
         if(session()->get('logged_in') == FALSE)
         {
-            return redirect()->to(base_url(''));
+            // return redirect()->to(base_url(''));
         }
 
     }

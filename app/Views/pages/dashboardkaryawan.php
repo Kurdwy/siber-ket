@@ -75,33 +75,20 @@
                     <td>
                       <div class="d-flex">
                         <a class="btn btn-warning mr-3" href="/formeditmember/edit/<?= $mbr['nik'] ?>"> Edit</a>
-                        <!-- <a class="btn btn-danger btn-sm btn-delete " data-bs-toggle="modal" data-bs-target="exampleModalLabel" data-id="<?= $mbr['nik'] ?>">Delete</a> -->
-                        <!-- <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
-                          <input name="_method" value="DELETE" type="hidden">
-                          <button type="submit" class="btn btn-danger">Delete</button>
-                        </form> -->
-                        <form action="/dashboardkaryawan/delete/<?= $mbr['nik'] ?>" method="post">
-                          <!-- <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Delete Product</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Delete
+                        </button>
 
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Member</h1>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Hapus Member</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                Apakah yakin akan menghapus data?
+                                Apakah yakin ingin menghapus member ?
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
@@ -111,12 +98,8 @@
                                 </form>
                               </div>
                             </div>
-                          </div> -->
-                          <input name="_method" value="DELETE" type="hidden">
-                          <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
-                        </form>
-                      </div>
+                          </div>
+                        </div>
                     </td>
                   </tr>
 
