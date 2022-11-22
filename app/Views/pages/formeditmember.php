@@ -1,4 +1,5 @@
 <!-- Content Wrapper. Contains page content -->
+
 <div class="content-wrapper mt-4">
     <section class="content">
         <div class="container-fluid">
@@ -44,7 +45,7 @@
                                     </div>
                                     <div class="form-group col-6">
                                         <label for="alamat">Alamat</label>
-                                        <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamatnya dimana ya?">
+                                        <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukan Alamat">
                                     </div>
                                     <div>
                                         <button type="submit" class="btn" style="background-color: #800000; color: white; transform:translate(550%)"> <i class="fa fa-paper-plane mr-1" aria-hidden="true"></i>Simpan</button>

@@ -48,11 +48,12 @@
             <ul class="navbar-nav ml-auto">
                 <div class="user-panel d-flex">
                     <div class="image">
-                        <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/dist/img/avatar2.png') ?>" class="img-circle elevation-2" alt="User Image">
+                        <a href="/viewakun">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-circle elevation-2 mr-1" alt="User Image">
+                        </a>
+
                     </div>
-                    <div class="info">
-                        <a href="/viewakun" class="d-block">UJANG SLEBEW</a>
-                    </div>
+
                 </div>
             </ul>
 
@@ -85,7 +86,7 @@
             <!-- Brand Logo -->
             <a class="brand-link">
                 <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/img/siber-ket-with-bg.png') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <h4 class="brand-text font-weight-light"><b>Siber-ket</b></h4>
+                <h4 class="brand-text active" style="color: #000000;"><b>Siber-ket</b></h4>
             </a>
 
             <!-- Sidebar -->
@@ -107,7 +108,7 @@
                             <div class="card-bg">
                                 <li class="nav-item">
                                     <a href="/dashboardkaryawan" class="nav-link">
-                                        <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
+                                        <i class="nav-icon fas fa-sticky-note" style="color:#ffffff;"></i>
                                         <p style="color:#ffffff;">
                                             Data Member
                                             <!-- <i class="fas fa-angle-left right"></i> -->

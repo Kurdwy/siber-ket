@@ -20,7 +20,7 @@ class AkunKaryawan extends BaseController
             'karyawan' => $karyawan,
         ];
 
-        return view('templates/h', $data)
+        return view('templates/he', $data)
             . view('pages/regis', $data)
             . view('templates/f');
     }
@@ -103,5 +103,5 @@ class AkunKaryawan extends BaseController
 
         $karyawanModel->update($nik, $data);
         return redirect()->to('/listkaryawan');
-        }
+    }
 }

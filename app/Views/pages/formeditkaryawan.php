@@ -1,5 +1,6 @@
 <?php echo view('templates/he'); ?>
 <!-- Content Wrapper. Contains page content -->
+
 <div class="content-wrapper mt-4">
 <section class="content">
       <div class="container-fluid">
