@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Siber-ket</title>
-    <link rel="icon shortcut" href="/Assets/AdminLTE-3.2.0/img/Siber-ket-with-bg.png">
+    <link rel="icon shortcut" href="">
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="<?php echo base_url('/Assets/AdminLTE-3.2.0/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback') ?>">

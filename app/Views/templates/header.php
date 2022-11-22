@@ -27,7 +27,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand-md navbar-danger " style="background-color: #800000;">
             <div class="container-fluid justify-content-center">
-                <a href="/Assets/AdminLTE-3.2.0/index3.html" class="navbar-brand">
+                <a href=<?= base_url()?> base class="navbar-brand">
                     <img src="/Assets/AdminLTE-3.2.0/img/siber-ket.png" alt="FOTO HILANG" width="50px">
                     <span class="brand-text font-weight-light" style="color: white;"><b>Siber-ket</b></span>
                 </a>
