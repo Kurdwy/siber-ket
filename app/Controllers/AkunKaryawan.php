@@ -113,7 +113,6 @@ class AkunKaryawan extends BaseController
             'title' => 'Edit Data Member',
             'member' => $member,
         ];
-
-        return view('member/cetak_kartu', $data);
+        return view('pages/cetak_kartu', $data);
     }
 }

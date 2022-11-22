@@ -77,7 +77,7 @@
                     <td>
                       <div class="d-flex">
                         <a class="btn btn-warning mr-3" href="/formeditmember/edit/<?= $mbr['nik'] ?>"> <i class="fa fa-pencil-alt" aria-hidden="true"></i></a>
-                        <a href="/cetakkartu/<?= $mbr['nik'] ?>" type="button" class="btn btn-info mr-3"><i class="fa fa-print"></i></a>
+                        <a href="/member/cetak_kartu/<?= $mbr['nik'] ?>" type="button" class="btn btn-info mr-3"><i class="fa fa-print"></i></a>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           <i class="fa fa-trash-alt mr-1" aria-hidden="true"></i>
                         </button>

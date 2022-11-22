@@ -61,7 +61,7 @@ $routes->delete('/listkaryawan/delete/(:num)', 'AkunKaryawan::delete/$1');
 $routes->post('/formloginadmin/process', 'LoginAdmin::process');
 $routes->get('/admin/logout', 'LoginAdmin::logout');
 $routes->get('/dashboardadmin', 'DashboardAdmin::index');
-$routes->get('/member/cetakkartu/(:num)','AdminController::cetakkartu/$1');
+$routes->get('/member/cetak_kartu/(:num)','AkunKaryawan::cetakkartu/$1');
 
 
 $routes->get('(:any)', 'Pages::view/$1');
