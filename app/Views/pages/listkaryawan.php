@@ -31,7 +31,7 @@
                                     <form action="" method="POST">
                                         <div class="input-group">
                                             <input type="text" class="form-control" value="<?= $keyword ?>" placeholder="Masukan Keyword Pencarian" name="keyword" autocomplete="off">
-                                            <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
+                                            <button class="btn btn-outline-secondary" type="submit" name="submit"><i class="fa fa-search mr-1" aria-hidden="true"></i>Cari</button>
                                         </div>
                                     </form>
                                 </div>
@@ -75,9 +75,9 @@
                                         <td><?= $kry['nomorTelepon'] ?></td>
                                         <td>
                                             <div class="d-flex">
-                                                <a class="btn btn-warning mr-3" href="/formeditkaryawan/<?= $kry['nik'] ?>"><i class="fa fa-pencil-alt" aria-hidden="true"></i> Edit</a>
+                                                <a class="btn btn-warning mr-3" href="/formeditkaryawan/<?= $kry['nik'] ?>"><i class="fa fa-pencil-alt" aria-hidden="true"></i></a>
                                                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                    <i class="fa fa-trash-alt mr-1" aria-hidden="true"></i>Delete
+                                                    <i class="fa fa-trash-alt mr-1" aria-hidden="true"></i>
                                                 </button>
 
                                                 <!-- Modal -->

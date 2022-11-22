@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Siber-ket</title>
-    <link rel="icon shortcut" href="">
+    <link rel="icon shortcut" href="/Assets/AdminLTE-3.2.0/img/siber-ket-with-bg.png">
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="<?php echo base_url('/Assets/AdminLTE-3.2.0/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback') ?>">
@@ -116,19 +116,19 @@
                             </div>
                         </div>
 
-                        <div class="container-bg mt-4">
+                        <!-- <div class="container-bg mt-4">
                             <div class="card-bg">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="nav-icon fas fa-table" style="color:#ffffff;"></i>
                                         <p style="color:#ffffff;">
                                             Validasi Member
-                                            <!-- <i class="fas fa-angle-left right"></i> -->
+                                            <i class="fas fa-angle-left right"></i>
                                         </p>
                                     </a>
                                 </li>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="container-bg mt-2">
                             <div class="card-bg">

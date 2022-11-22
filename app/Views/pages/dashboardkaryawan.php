@@ -35,7 +35,7 @@
                   <form action="" method="POST">
                     <div class="input-group">
                       <input type="text" class="form-control" value="<?= $keyword ?>" placeholder="Masukan Keyword Pencarian" name="keyword" autocomplete="off">
-                      <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
+                      <button class="btn btn-outline-secondary" type="submit" name="submit"><i class="fa fa-search mr-1" aria-hidden="true"></i>Cari</button>
                     </div>
                   </form>
                 </div>
@@ -76,10 +76,10 @@
                     <td><?= $mbr['alamat'] ?></td>
                     <td>
                       <div class="d-flex">
-                        <a class="btn btn-warning mr-3" href="/formeditmember/edit/<?= $mbr['nik'] ?>"> <i class="fa fa-pencil-alt" aria-hidden="true"></i> Edit</a>
-                        <a href="/cetakkartu/<?= $mbr['nik'] ?>" type="button" class="btn btn-warning"><i class="fa fa-print"></i></a>
+                        <a class="btn btn-warning mr-3" href="/formeditmember/edit/<?= $mbr['nik'] ?>"> <i class="fa fa-pencil-alt" aria-hidden="true"></i></a>
+                        <a href="/cetakkartu/<?= $mbr['nik'] ?>" type="button" class="btn btn-info mr-3"><i class="fa fa-print"></i></a>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          <i class="fa fa-trash-alt mr-1" aria-hidden="true"></i>Delete
+                          <i class="fa fa-trash-alt mr-1" aria-hidden="true"></i>
                         </button>
 
                         <!-- Modal -->

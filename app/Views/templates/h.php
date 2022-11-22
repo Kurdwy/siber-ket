@@ -47,12 +47,12 @@
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <div class="user-panel d-flex">
-                    <div class="image">
+                    <!-- <div class="image">
                         <a href="/viewakun">
                             <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-circle elevation-2 mr-1" alt="User Image">
                         </a>
 
-                    </div>
+                    </div> -->
 
                 </div>
             </ul>
