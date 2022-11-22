@@ -104,4 +104,16 @@ class AkunKaryawan extends BaseController
         $karyawanModel->update($nik, $data);
         return redirect()->to('/listkaryawan');
     }
+
+    public function cetakkartu($nik){
+        $memberModel = new Member();
+        $member = $memberModel->find($nik);
+
+        $data = [
+            'title' => 'Edit Data Member',
+            'member' => $member,
+        ];
+
+        return view('member/cetak_kartu', $data);
+    }
 }
