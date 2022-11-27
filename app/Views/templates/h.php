@@ -28,6 +28,10 @@
     <link rel="stylesheet" href="<?php echo base_url('/Assets/AdminLTE-3.2.0/plugins/daterangepicker/daterangepicker.css') ?>">
     <!-- summernote -->
     <link rel="stylesheet" href="<?php echo base_url('/Assets/AdminLTE-3.2.0/plugins/summernote/summernote-bs4.min.css') ?>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -85,8 +89,9 @@
         <aside class="main-sidebar elevation-4" style="background-color: #ffffff;">
             <!-- Brand Logo -->
             <a class="brand-link">
-                <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/img/siber-ket-with-bg.png') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <h4 class="brand-text active" style="color: #000000;"><b>Siber-ket</b></h4>
+                <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/img/siber-ket-with-bg.png') ?>" alt="Siberlogo Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="<?php echo base_url('/Assets/AdminLTE-3.2.0/img/tulisansiber.png') ?>" alt="Tulisan" class="brand-image" style="width: 150px;">
+                <h4 class="" style="color: #000000;"><b></b></h4>
             </a>
 
             <!-- Sidebar -->
@@ -104,11 +109,11 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <div class="container-bg">
+                        <div class="container-bg mt-4">
                             <div class="card-bg">
                                 <li class="nav-item">
                                     <a href="/dashboardkaryawan" class="nav-link">
-                                        <i class="nav-icon fas fa-sticky-note" style="color:#ffffff;"></i>
+                                        <i class="nav-icon fas fa-book" style="color:#ffffff;"></i>
                                         <p style="color:#ffffff;">
                                             Data Member
                                             <!-- <i class="fas fa-angle-left right"></i> -->

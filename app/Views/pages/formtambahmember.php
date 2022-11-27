@@ -48,7 +48,7 @@
                                         <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukan Alamat">
                                     </div>
                                     <div>
-                                        <button type="submit" class="btn" style="background-color: #800000; color: white;"><i class="fa fa-paper-plane mr-1" aria-hidden="true"></i>Tambah</button>
+                                        <button type="submit" class="btn" style="background-color: #800000; color: white;"><i class="fa fa-save mr-2" aria-hidden="true"></i>Simpan</button>
                                     </div>
                                 </div>
                             </div>

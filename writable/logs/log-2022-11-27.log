@@ -1,0 +1,44 @@
+ERROR - 2022-11-27 13:35:11 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'weblanjutprakti...', 3306, '', 0)
+#1 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\siber-ket\app\Controllers\DashboardKaryawan.php(30): CodeIgniter\BaseModel->paginate(4, 'member')
+#7 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\DashboardKaryawan->index()
+#8 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardKaryawan))
+#9 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\siber-ket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\siber-ket\app\Controllers\DashboardKaryawan.php(30): CodeIgniter\BaseModel->paginate(4, 'member')
+#6 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\DashboardKaryawan->index()
+#7 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardKaryawan))
+#8 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siber-ket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\siber-ket\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-11-27 13:35:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `member`', [], false)
+ 3 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\DashboardKaryawan.php(30): CodeIgniter\BaseModel->paginate(4, 'member')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\DashboardKaryawan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardKaryawan))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
